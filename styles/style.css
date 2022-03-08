@@ -1,0 +1,151 @@
+@font-face
+{
+    font-family: 'RobotoBlack';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../fonts/Roboto-Black.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'RobotoRegular';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'RobotoMedium';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'RobotoBold';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+
+/*Меняется сдандартный алгоритм расчета размера блока, размер перастает учитывать отступы  */
+html
+{
+    box-sizing: border-box;
+}
+/*Применяется правила наследования box-sizing для наследуемых элементов*/
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+/*Основные стили для тела страницы, унаследуются остальными элементами*/
+body
+{
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    color: #8993ad;
+    /* background-color: #fbfbfb; */
+    background: linear-gradient(90deg, #fbfbfb, #fff) no-repeat;
+
+    overflow-x: hidden;
+}
+
+body.modal-active
+{
+    overflow: hidden;
+}
+
+
+/*убирает стандартные стили у ссылок*/
+a
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+
+/*стили для скрытых элементов*/
+.visually-hidden
+{
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+
+/*очищает плавающие элементы*/
+.clearfix::after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.container {
+    max-width: 1170px;
+    min-width: 220px;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+.read-more {
+    background-color: #ff4e2e;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+}
+
+.read-more:hover {
+    background-color: #fff;
+    outline: 1px solid #ff5e79;
+    color: #ff5e79;
+    transition: color .3s ease .3s, background .3s ease .3s, outline .3s ease .3s;
+}
+
+.callback {
+    background-color: #fff;
+    border: 1px solid #ff5e79;
+    color: #ff5e79;
+}
+
+.callback:hover {
+    background-color: #ff4e2e;
+    color: #fff;
+    transition: color .3s ease .3s, background .3s ease .3s;
+}
+
+
