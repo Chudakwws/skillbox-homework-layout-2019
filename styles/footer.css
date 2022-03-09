@@ -20,7 +20,7 @@
 .footer__link:hover {
     color: #fc557c;
     border-bottom: 0.5px solid #fc557c;
-    transition: color .3s ease .3s, border .3s ease .3s;
+    transition: color .3s ease, border .3s ease;
 }
 
 .footer__contacts {
@@ -53,7 +53,7 @@
 .footer__link_hover:hover {
     color: #fc557c;
     border-bottom: 0.5px solid #fc557c;
-    transition: color .3s ease .3s, border .3s ease .3s;
+    transition: color .3s ease, border .3s ease;
 }
 
 .social {

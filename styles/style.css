@@ -47,6 +47,7 @@
 html
 {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 /*Применяется правила наследования box-sizing для наследуемых элементов*/
 *,
@@ -113,7 +114,7 @@ a
 .container {
     max-width: 1170px;
     min-width: 220px;
-    padding: 0;
+    padding: 0 30px;
     margin: 0 auto;
     
 }
@@ -133,7 +134,7 @@ button {
     background-color: #fff;
     outline: 1px solid #ff5e79;
     color: #ff5e79;
-    transition: color .3s ease .3s, background .3s ease .3s, outline .3s ease .3s;
+    transition: color .3s ease, background .3s ease, outline .3s ease;
 }
 
 .callback {
@@ -145,7 +146,7 @@ button {
 .callback:hover {
     background-color: #ff4e2e;
     color: #fff;
-    transition: color .3s ease .3s, background .3s ease .3s;
+    transition: color .3s ease, background .3s ease;
 }
 
 
